@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoConecta</title>
+  <link rel="stylesheet" href="../Styles/principal.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="../../../Assets/Logos/ecoconecta.png" />
+  <link rel="stylesheet" href="../Styles/login_modal.css" />
+</head>
+<body>
+
+  <header>
+    <div class="top-bar">
+      <div class="left"></div> <!-- adiciona este -->
+
+      <div class="right">
+        <div class="hamburger" id="hamburger">&#9776;</div>
+
+        <div class="dropdown" id="dropdown-menu">
+          <div class="profile-pic">
+            <img src="../../../Assets/Icons/perfilIcon.png" alt="Perfil">
+          </div>
+
+          <ul>
+            <li><a href="#" id="login-link">Fazer Login</a></li>
+            <li><a href="#" id="register-link">Criar Conta</a></li>
+            <li><a href="#" id="perfil-link">Perfil</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="logo-container">
+      <img src="../../../Assets/Logos/ecoconecta.png" alt="Logo do EcoConecta" class="logo">
+    </div>
+  </header>
+
+  <section class="carousel">
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <img src="../../../Assets/Carrossel/descarte_lixo.png" alt="Imagem 1">
+        <img src="../../../Assets/Carrossel/dica_lixo.png" alt="Imagem 2">
+        <img src="../../../Assets/Carrossel/etapas_processo.png" alt="Imagem 3">
+      </div>
+
+      <div class="carousel-indicators">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+    </div>
+  </section>
+
+  <main class="content">
+    <section class="hero">
+      <h2>♻️ Conectando você com um mundo mais limpo</h2>
+      <p>Receba dicas, encontre pontos de coleta e ajude a construir um planeta mais sustentável com o EcoConecta.</p>
+      <a href="#" id="gerenciar-conta-btn">Gerenciar Conta</a>
+    </section>
+
+    <section class="features">
+      <div class="feature-card">
+        <h3><b>Dicas Sustentáveis</b></h3>
+        <img src="../../../Assets/Logos/dicas_sustentaveis.png" alt="Dicas Sustentáveis">
+        <p>Aprenda como descartar corretamente materiais recicláveis, eletrônicos e orgânicos no dia a dia.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3><b>Pontos de Coleta</b></h3>
+        <img src="../../../Assets/Logos/pontos_coleta.png" alt="Pontos de Coleta">
+        <p>Encontre locais próximos onde você pode levar seus resíduos e contribuir para um mundo mais limpo.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3><b>Perfil Sustentável</b></h3>
+        <img src="../../../Assets/Logos/perfil_sustentavel.png" alt="Perfil Sustentável">
+        <p>Gerencie sua conta, personalize suas preferências e acompanhe sua jornada ecológica.</p>
+      </div>      
+
+      <div class="feature-card">
+        <h3><b>Estatísticas Ambientais</b></h3>
+        <img src="../../../Assets/Logos/estatisticas_ambientais.png" alt="Estatísticas Ambientais">
+        <p>Veja seu impacto positivo no meio ambiente e acompanhe seus dados de reciclagem e descarte.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3><b>Atualizações Verdes</b></h3>
+        <img src="../../../Assets/Logos/atualizacoes_sustentaveis.jpg" alt="Atualizações Verdes">
+        <p>Fique por dentro de campanhas, datas importantes e eventos ambientais perto de você.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 EcoConecta. Todos os direitos reservados.
+  </footer>
+
+  <script type="module" src="../../../domain/user_service.js"></script>
+  <script type="module" src="../../../gerenciador/main_page.js"></script>
+  <script type="module" src="../../../ui/main/JavaScript/carousel.js"></script>
+  <script type="module" src="../JavaScript/cadastro_modal.js"></script>
+
+  <div id="modal-container"></div>
+
+</body>
+</html>

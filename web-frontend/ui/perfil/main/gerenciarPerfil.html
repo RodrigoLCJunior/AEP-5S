@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerenciar Conta | Rewalker</title>
+  <link rel="stylesheet" href="../Styles/perfilConta.css" />
+  <link rel="stylesheet" href="../Styles/alterar_senha.css" />
+  <link rel="icon" type="image/png" href="../../../Assets/Logos/rewalker_favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <aside class="account-container">
+    <h1>Gerenciar Conta</h1>
+
+    <div class="profile-section">
+      <img src="../../../Assets/Icons/perfilIcon.png" alt="Foto de Perfil" class="profile-pic">
+      <button class="edit-photo-btn">Alterar Foto</button>
+    </div>
+
+    <div class="info-section">
+      <div class="info-item">
+        <span class="label">Nome:</span>
+        <span id="user-name">Carregando...</span>
+        <button class="edit-btn" id="edit-name-btn">Editar</button>
+      </div>
+
+      <div class="info-item">
+        <span class="label">Email:</span>
+        <span id="user-email">Carregando...</span>
+        <button class="edit-btn" id="edit-email-btn">Editar</button>
+      </div>
+
+      <div class="info-item">
+        <span class="label">Senha:</span>
+        <span>********</span>
+        <button class="edit-btn" id="change-password-btn">Alterar Senha</button>
+      </div>
+
+      <div class="info-item">
+        <button id="logout-btn" class="logout-btn">Sair da Conta</button>
+      </div>
+
+      <div class="info-item">
+        <button id="delete-account-btn" class="delete-btn">Excluir Conta</button>
+      </div>
+    </div>
+  </aside>
+
+  <main class="awareness-container">
+    <div id="awareness-container">
+      <h1>Conscientização Ambiental</h1>
+      <p>O EcoConecta é mais do que um aplicativo, é uma comunidade!</p>
+      <p>Estamos aqui para ajudar você a fazer a diferença no mundo.</p>
+      <p>Participe de eventos, compartilhe dicas e conecte-se com pessoas que se importam com o meio ambiente.</p>
+      <h2>Por um planeta mais limpo!</h2>
+      <p>Você sabia que uma garrafa plástica pode levar até 450 anos para se decompor?</p>
+      <p>Separe seu lixo e ajude a reduzir a poluição!</p>
+      <p>Cada pequena ação conta. Vamos juntos preservar o meio ambiente!</p>
+    </div>
+  </main>
+
+   <div id="modal-container"></div>
+
+  <script type="module" src="../../../gerenciador/controllerCount.js"></script>
+</body>
+</html>
